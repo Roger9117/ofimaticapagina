@@ -1,0 +1,119 @@
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  header {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  nav ul {
+    animation: slideIn 1s ease-in-out;
+  }
+  
+  main {
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  section {
+    animation: slideIn 3s ease-in-out;
+  }
+  
+  .producto button:hover {
+    animation: pulse 0.5s ease-in-out;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }
+  
+  footer {
+    animation: fadeIn 1s ease-in-out;
+  }
+
+table {
+    animation: scroll 2s ease-in-out;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  td:hover {
+    animation: hover 1.5s ease-in-out;
+  }
+  
+  @keyframes hover {
+    0% {
+      background-color: #f9f9f9;
+    }
+    100% {
+      background-color: #ccc;
+    }
+  }
+
+  @keyframes carga {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .imagen {
+    transition: transform 0.3s ease-in-out;
+    width: 200px; /* Tamaño original de la imagen */
+    height: 150px; /* Tamaño original de la imagen */
+  }
+  
+  .imagen:hover {
+    transform: scale(2.8); /* Amplía la imagen un 20% */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* Agrega sombra */
+    z-index: 1; /* Coloca la imagen encima de otras elementos */
+  }
+
+  .imagen2 {
+    transition: transform 0.3s ease-in-out;
+    width: 200px; /* Tamaño original de la imagen */
+    height: 150px; /* Tamaño original de la imagen */
+  }
+  
+  .imagen2:hover {
+    transform: scale(1.6); /* Amplía la imagen un 20% */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* Agrega sombra */
+    z-index: 1; /* Coloca la imagen encima de otras elementos */
+  }
