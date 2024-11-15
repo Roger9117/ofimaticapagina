@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ENCUESTA</title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/animaciones.css">
+</head>
+<body>
+		<center><fieldset style="width: 40em;">
+			<legend><h3>FORMULARIO DE COMPRA</h3></legend>
+            <h2>RELLENA TODOS LOS CAMPOS</h2>
+			<table border="3" align="center">
+			<form>
+			<tr>
+				<td><label>Apellido Paterno</label></td><td><input type="text" placeholder="Aqui escriba su Apellido Paterno" required="true" size="50" maxlength="15"></td>
+			</tr>
+            <tr>
+				<td><label>Apellido Materno</label></td><td><input type="text" placeholder="Aqui escriba su Apellido Materno" required="true" size="50" maxlength="15"></td>
+			</tr>
+			<tr>
+				<td><label>Nombres</label></td><td><input type="text" placeholder="Aqui escriba sus nombres" required="true" size="50" maxlength="30"></td>
+			</tr>
+            <tr>
+				<td><label>Direccion de domicilio</label></td><td><input type="text" placeholder="Escriba su direccion" required="true" size="50" maxlength="50"></td>
+			</tr>
+			<tr>
+				<td><label>Ingrese su numero de celular</label></td><td><input type="number" placeholder="Solo numeros" required="true" maxlength="8"></td>
+			</tr>
+			<tr>
+				<td><label>Genero</label></td><td>Hombre <input type="radio" name="sexo"> Mujer <input type="radio" required="true" name="sexo"></td>
+			</tr>
+			<tr>
+				<td><label>Ingrese un correo electronico valido</label></td><td><input type="email" required="true" size="50"></td>
+			</tr>
+			<tr>
+				<td><label for="metodo">Metodo de Pago</label></td><td><select name = "ocupacion" required="true">
+					<option value="tarjeta">Tarjeta Credito/Debito</option>
+					<option value="qr">Qr</option>
+					<option value="dep_banc">Deposito Bancario</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td><label>Comentarios</label></td><td><textarea required="true" rows="5" cols="45">Aqui escriba una breve opinion sobre el servicio</textarea></td>
+			</tr>
+			<tr>
+				<td><label>Accion a realizar</label></td><td><input class="boton" type="submit" value="Enviar los datos" required="true"> <input type="reset" class="boton" value="Borrar los datos" required="true"></td>
+			</tr>
+		</form>
+		</table>
+    </fieldset><br>
+		¿Sabes que las personas dicen que no se puede vivir sin amor? Bueno, el oxigeno es mas importante.
+</body>
+</html>
